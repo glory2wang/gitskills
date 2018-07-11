@@ -11,7 +11,7 @@ public class Sensitive {
         Map mmap = createMap(arr);
 
         System.out.println(mmap);
-        String check = "日普日本人拉斯哦附加asxcdd费近乎疯man狂的克莱ddddd斯天天向上勒水利建设因素日本商人人顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶";
+        String check = "日普日本人拉斯哦附加sddd费近乎疯man狂的克莱ddddd斯天天向上勒水利建设因素日本商人人顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶";
         for(int i=0;i<check.length();i++){
             char letter = check.charAt(i);
             if(mmap.get(letter)!=null){
