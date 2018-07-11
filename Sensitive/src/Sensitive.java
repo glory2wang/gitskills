@@ -7,10 +7,11 @@ import java.util.Map;
 public class Sensitive {
 
     public static void main(String[] args){
-        String[] arr = {"日本人","日本商人","天天向上"};
+        String[] arr = {"日本人","日本商人","天天向上","man"};
         Map mmap = createMap(arr);
+
         System.out.println(mmap);
-        String check = "日普日本人拉斯哦附加费近乎疯狂的克莱斯天天向上勒水利建设因素日本商人人顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶";
+        String check = "日普日本人拉斯哦附加asxcdd费近乎疯man狂的克莱ddddd斯天天向上勒水利建设因素日本商人人顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶";
         for(int i=0;i<check.length();i++){
             char letter = check.charAt(i);
             if(mmap.get(letter)!=null){
