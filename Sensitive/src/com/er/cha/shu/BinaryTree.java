@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by wz on 2018/7/11.
  */
-public class ExecuteTree {
+public class BinaryTree {
 
 
     private static TreeNode createBinaryTreeByArray(Integer[] array, int index) {
@@ -26,17 +26,17 @@ public class ExecuteTree {
 
     private static void printTree(TreeNode root,List list){
         if(root!=null){
-            list.add(root.val);
             printTree(root.left,list);
+            list.add(root.val);
             printTree(root.right,list);
         }
-        /**                                            1
+        /**                                            5
          *                                         /     \
-         *                                      2         3
-         *                                    /   \     /  \
-         *                                  4      5  6     7
-         *                                /   \
-         *                              8      9
+         *                                       4        8
+         *                                    /         /  \
+         *                                  2         7     9
+         *                                /   \      /
+         *                              1      3    6
          *
          *                               1  2 4 8 9 5 3 6 7
          *
@@ -44,7 +44,7 @@ public class ExecuteTree {
          */
     }
     public static void main(String[] args) {
-        Integer[] arr = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        Integer[] arr = new Integer[]{5, 4, 8, 2, 7, 9, 1, 3,6};
         TreeNode root = createBinaryTreeByArray(arr,0);
         List list =new ArrayList();
         printTree(root,list);
